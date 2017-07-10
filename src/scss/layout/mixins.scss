@@ -1,0 +1,36 @@
+%flexRowNoWrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+%flexColumnNoWrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+%flexRowAlignStart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+%itemDecor {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid $colorType2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}

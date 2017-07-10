@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 480px;
+    }
+
+    .siteLogo {
+        // transform: scale(.9);
+    }
+
+    .features__item {
+        width: 360px;
+        margin-bottom: 25px;
+    }
+
+    .features__name::after {
+        border: 6px solid #fff;
+        top: 40px;
+    }
+
+    .features__name {
+        margin-bottom: 32px;
+    }
+
+    .content__section {
+        flex-wrap: wrap;
+        background: url('../../img/bg/pattern.jpg');
+    }
+
+    .holder {
+        width: 100%;
+        margin-bottom: 55px;
+        padding: 0;
+        &__buttons {
+            width: 100%;
+        }
+        &:first-child, &:last-child {
+            padding: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .gallerySlider {
+        margin-bottom: 30px;
+        &__photo {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .formEntry {
+        width: 100%;
+    }
+
+    .formEntry__input {
+        width: 195px;
+    }
+}

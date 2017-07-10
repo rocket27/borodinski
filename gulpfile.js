@@ -40,6 +40,7 @@ let vendorJs = [ // Массив сторонних библиотек JS в н�
 
 let vendorCss = [ // Массив сторонних библиотек CSS в необходимом порядке
     'node_modules/normalize.css/normalize.css',
+    'node_modules/font-awesome/css/font-awesome.css',
     'node_modules/owl.carousel/dist/assets/owl.carousel.css',
     'node_modules/owl.carousel/dist/assets/owl.theme.default.css'
     // остальные файлы
@@ -72,8 +73,7 @@ gulp.task('images', function () {
         .pipe(cache(imageMin({
             optimizationLevel: 3, 
             progressive: true, 
-            interlaced: true,
-            svgoPlugins: [{removeViewBox: true}]
+            interlaced: true
         })))
         .pipe(gulp.dest('dist/img/'));
 });

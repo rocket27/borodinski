@@ -1,0 +1,36 @@
+@media screen and (max-width: 980px) {
+
+    .container {
+        width: 728px;
+    }
+
+    // Header
+    .mainMenu__link, .userBlock__login {
+        padding: 0 10px;
+    }
+
+    // Index
+    .content {
+        padding-top: 30px;
+    }
+
+    .features {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        &__item {
+            width: 320px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .content__section {
+        padding: 40px 30px;
+    }
+
+    .holder:last-child {
+        padding-left: 34px;
+    }
+
+}

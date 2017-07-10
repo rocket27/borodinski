@@ -1,0 +1,100 @@
+.priceContent {
+    background-image: url('../../img/bg/pattern.jpg');
+    padding-top: 50px;
+    &__title {
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+        &::before, &::after {
+            content: '';
+            display: block;
+            width: 160px;
+            height: 2px;
+            background-color: $colorType2;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+    }
+    &__sectionContainer {
+        @extend %flexRowNoWrap;
+        margin-bottom: 80px;
+    }
+    &__section {
+        width: 470px;
+    }
+    &__sectionSubtitle {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        margin-bottom: 60px;
+    }
+    &__item {
+        padding-left: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        &::before {
+            @extend %itemDecor;
+            left: 0;
+        }
+    }
+}
+
+.breadCrumbs {
+    margin-bottom: 50px;
+    font-size: 0;
+    &__title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    &__item {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        margin-right: 40px;
+        &::after {
+            @extend %itemDecor;
+            right: -25px;
+        }
+        &_active {
+            color: #aba9a7;
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.priceTable {
+    width: 470px;
+    border-collapse: collapse;
+    border: 2px solid $colorType2;
+    margin-bottom: 154px;
+    &__row {
+        height: 40px;
+    }
+    &__cellCol1, &__cellCol2 {
+        width: 235px;
+    }
+    &__cellCol1 {
+        padding-left: 18px;
+    }
+    &__cellCol2 {
+        text-align: center;
+    }
+    & td {
+        border: 2px solid $colorType2;
+    }
+}

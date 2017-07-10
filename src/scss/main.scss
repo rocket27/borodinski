@@ -2,3 +2,11 @@
 @import 'layout/variables.scss';
 @import 'layout/mixins.scss';
 @import 'layout/global.scss';
+
+@import 'sections/header.scss';
+@import 'sections/footer.scss';
+@import 'sections/barbershop.scss';
+@import 'sections/price.scss';
+
+@import 'media/laptop.scss';
+@import 'media/tablet.scss';

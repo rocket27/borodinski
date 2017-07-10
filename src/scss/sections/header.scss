@@ -1,0 +1,50 @@
+.header {
+    background-color: #000;
+    color: $colorType3;
+}
+
+.headerContent {
+    @extend %flexRowNoWrap;
+}
+
+.mainMenu {
+    // width: 800px;
+    &__list {
+        @extend %flexRowNoWrap;
+        justify-content: flex-start;
+    }
+    &__logo {
+        height: $headerHeight;
+    }
+    &__image {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+    &__link:active {
+        border-bottom: 4px solid $colorType3;
+    }
+}
+
+.mainMenu__link, .userBlock__login {
+    display: block;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    color: $colorType3;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: background-color .5s;
+    &:hover {
+        background-color: #242424;
+    }
+}
+
+.userBlock__login:hover .userBlock__loginIcon {
+    color: $colorType3;
+}
+
+.userBlock__loginIcon {
+    color: #4d4d4d;
+    padding-right: 10px;
+    transition: color .5s;
+}
