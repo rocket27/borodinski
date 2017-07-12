@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) {
+
+    $containerWidth: 95%;
+
+    .container {
+        width: $containerWidth;
+    }
+
+    .features {
+        display: none;
+    }
+
+}

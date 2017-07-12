@@ -1,7 +1,9 @@
 @media screen and (max-width: 980px) {
 
+    $containerWidth: 728px; 
+
     .container {
-        width: 728px;
+        width: $containerWidth;
     }
 
     // Header

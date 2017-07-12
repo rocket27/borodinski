@@ -1,9 +1,37 @@
 @media screen and (max-width: 768px) {
 
+    // Global
+    $containerWidth: 480px;
+    $headerHeight: 42px;
+    $footerHeight: 145px;
+
+    .wrapper::after {
+        height: $footerHeight;
+    }
+    
     .container {
-        width: 480px;
+        width: $containerWidth;
     }
 
+    // Header
+    .header {
+        min-height: $headerHeight;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .dropdownMenu {
+        display: block;
+    }
+
+    .userBlock__login {
+        line-height: $headerHeight;
+        font-size: 18px;
+    }
+
+    // Index
     .siteLogo {
         // transform: scale(.9);
     }
@@ -56,5 +84,30 @@
 
     .formEntry__input {
         width: 195px;
+    }
+
+    // Footer
+    .footer {
+        min-height: $footerHeight;
+        margin-top: -$footerHeight;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 10px 0;
+        &__contacts {
+            text-align: center;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        &__copyright {
+            display: none;
+        }
+        &__text {
+            display: none;
+        }
     }
 }
