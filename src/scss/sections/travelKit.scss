@@ -1,0 +1,54 @@
+.productItemContent, .productGalery {
+    @extend %flexRowSpaceBetween;
+}
+
+.productPhoto {
+    width: 460px;
+}
+
+.productGalery__item {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    transition: transform .5s;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+.productGalery__picture {
+    display: block;
+}
+
+.productDescription {
+    width: 380px;
+    &__info {
+        @extend %flexRowNoWrap;
+        margin-bottom: 30px;
+    }
+    &__article {
+        color: #aeaeae;
+    }
+    &__text {
+        margin-bottom: 35px;
+    }
+    &__compositionTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+.composition__item {
+    background: url('../../img/decor/beard.png') no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 4px;
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.buySection_productItem {
+    margin-bottom: 65px;
+}

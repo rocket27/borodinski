@@ -8,8 +8,9 @@ html, body {
 }
 
 body {
+	background-image: url('../../img/bg/pattern.jpg');
 	font-family: ptSansNarrowBold, Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: $fontSize;
 	line-height: 24px;
 	color: $colorType2;
 	text-transform: uppercase;
@@ -40,6 +41,10 @@ a:link, a:visited, a:hover, a:active {
 	outline: none;
 }
 
+main {
+	padding: 50px 0;
+}
+
 button {
 	border: none;
 	outline: none;
@@ -50,6 +55,12 @@ button {
 
 input {
 	outline: none;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 
 .wrapper {
@@ -94,4 +105,45 @@ input {
 	&:hover {
 		color: $colorType4;
 	}
+}
+
+.breadCrumbs {
+	width: 100%;
+    margin-bottom: 50px;
+    font-size: 0;
+    &__title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    &__item {
+		display: inline-block;
+		background: url('../../img/decor/beard.png') no-repeat right center;
+        font-size: 14px;
+        position: relative;
+		padding-right: 30px;
+		margin-right: 10px;
+        &_active {
+			background: none;
+			color: #aba9a7;
+			padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.buySection {
+	@extend %flexRowAlignStart;
+	&__price {
+        display: inline-block;
+        width: 112px;
+        height: 43px;
+        line-height: 43px;
+        text-align: center;
+        background-color: #e5e5e5;
+    }
+}
+
+.button_buySection {
+    width: 78px;
 }

@@ -28,16 +28,25 @@
     position: relative;
     &__list {
         @extend %flexColumnNoWrap;
+        display: flex;
         opacity: 0;
-        transition: opacity .5s;
+        transition: opacity .5s;                    
         position: absolute;
         top: 0;
         left: -3600px;
+        z-index: 10;
+        &_active {
+            opacity: 1;
+            left: 36px;
+        }
     }
-    &:hover &__list {
-        left: 36px;
-        opacity: 1;
+    &:hover {
+        cursor: pointer;
     }
+    // &:hover &__list {
+    //     left: 36px;
+    //     opacity: 1;
+    // }
     &__icon {
         display: block;
     }
@@ -60,6 +69,7 @@
 
 .mainMenu__link, .userBlock__login {
     display: block;
+    height: $headerHeight;
     line-height: $headerHeight;
     color: $colorType3;
     padding: 0 20px;

@@ -1,6 +1,4 @@
 .priceContent {
-    background-image: url('../../img/bg/pattern.jpg');
-    padding-top: 50px;
     &__title {
         font-size: 48px;
         line-height: 72px;
@@ -26,7 +24,6 @@
     }
     &__sectionContainer {
         @extend %flexRowNoWrap;
-        margin-bottom: 80px;
     }
     &__section {
         width: 470px;
@@ -46,33 +43,6 @@
         &::before {
             @extend %itemDecor;
             left: 0;
-        }
-    }
-}
-
-.breadCrumbs {
-    margin-bottom: 50px;
-    font-size: 0;
-    &__title {
-        font-size: 30px;
-        line-height: 45px;
-        margin-bottom: 20px;
-    }
-    &__item {
-        display: inline-block;
-        font-size: 14px;
-        position: relative;
-        margin-right: 40px;
-        &::after {
-            @extend %itemDecor;
-            right: -25px;
-        }
-        &_active {
-            color: #aba9a7;
-            margin-right: 0;
-            &::after {
-                display: none;
-            }
         }
     }
 }

@@ -12,8 +12,11 @@
     }
 
     // Index
-    .content {
+    .index {
         padding-top: 30px;
+        &__section {
+            padding: 40px 30px;
+        }
     }
 
     .features {
@@ -26,11 +29,7 @@
             margin-bottom: 50px;
         }
     }
-
-    .content__section {
-        padding: 40px 30px;
-    }
-
+    
     .holder:last-child {
         padding-left: 34px;
     }

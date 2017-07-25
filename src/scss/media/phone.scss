@@ -1,13 +1,40 @@
 @media screen and (max-width: 480px) {
 
+    // Global
     $containerWidth: 95%;
 
     .container {
         width: $containerWidth;
     }
 
+    .button {
+        width: 44%;
+    }
+
+    // Header
+    .userBlock__login {
+        font-size: 26px;
+    }
+
+    .userBlock__loginIcon {
+        padding: 0;
+    }
+
+    .userBlock__loginText {
+        display: none;
+    }
+
+    // Index
     .features {
         display: none;
+    }
+
+    .holder__title {
+        text-align: center;
+    }
+
+    .formEntry__input, .button_submit, .button_news {
+        width: 100%;
     }
 
 }

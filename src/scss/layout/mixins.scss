@@ -17,6 +17,12 @@
     align-items: flex-start;
 }
 
+%flexRowSpaceBetween {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 @mixin placeholder {
   &::-webkit-input-placeholder { @content; }
   &:-moz-placeholder           { @content; }

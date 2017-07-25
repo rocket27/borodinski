@@ -1,0 +1,81 @@
+.shopContent {
+    @extend %flexRowAlignStart;
+}
+
+.filter {
+    width: 240px;
+    &__itemGroup {
+        margin-bottom: 50px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__groupName {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    &__caption {
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__checkboxDefault {
+        display: none;
+    }
+    &__checkboxCustom {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $colorType2;
+        background: #f9f6f3;
+        margin-right: 17px;
+        position: relative;
+    }
+    &__checkboxCustom, &__checkboxName {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__checkboxDefault:checked + &__checkboxCustom::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: url('../../img/content/shop/markerCheckbox.png') no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.production {
+    width: 700px;
+    @extend %flexRowAlignStart;
+    &__item {
+        width: 220px;
+        min-height: 300px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+        margin: 0 20px 20px 0;
+        transition: transform .5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &__character {
+        background-color: #fff;
+        padding: 15px;
+    }
+    &__type, &__name {
+        display: block;
+    }
+    &__name {
+        margin-bottom: 14px;
+    }
+}

@@ -28,7 +28,8 @@ const del          = require('del'),
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 let jsModules = [ // Массив своих JS файлов в необходимом порядке
-    'src/js/owlCarousel.js'
+    'src/js/owlCarousel.js',
+    'src/js/dropdown.js'
     // остальные файлы
 ]
 
@@ -226,12 +227,22 @@ gulp.task('build', function(callback) {
 // Task: Deploy.
 // --------------------------------------------------------------- //
 
+// gulp.task('deploy', function () {
+//     return gulp.src('dist/**/*.*')
+//         .pipe(sftp({
+//             host: 'hostName',
+//             user: 'userName',
+//             pass: 'password',
+//             remotePath: 'projectFolder/public_html/'
+//         }));
+// });
+
 gulp.task('deploy', function () {
     return gulp.src('dist/**/*.*')
         .pipe(sftp({
-            host: 'hostName',
-            user: 'userName',
-            pass: 'password',
-            remotePath: 'projectFolder/public_html/'
+            host: 'vh60.timeweb.ru',
+            user: 'cu11483',
+            pass: '7PjSghlVpps1',
+            remotePath: 'borodinski/public_html/'
         }));
 });

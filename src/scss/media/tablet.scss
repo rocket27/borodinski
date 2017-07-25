@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
 
     // Global
-    $containerWidth: 480px;
+    $containerWidth: 460px;
     $headerHeight: 42px;
     $footerHeight: 145px;
 
@@ -11,6 +11,10 @@
     
     .container {
         width: $containerWidth;
+    }
+
+    .button {
+        width: 184px;    
     }
 
     // Header
@@ -24,6 +28,10 @@
 
     .dropdownMenu {
         display: block;
+    }
+
+    .userBlock__login {
+        height: $headerHeight;
     }
 
     .userBlock__login {
@@ -50,7 +58,7 @@
         margin-bottom: 32px;
     }
 
-    .content__section {
+    .index__section {
         flex-wrap: wrap;
         background: url('../../img/bg/pattern.jpg');
     }
@@ -83,7 +91,7 @@
     }
 
     .formEntry__input {
-        width: 195px;
+        width: 184px;
     }
 
     // Footer
