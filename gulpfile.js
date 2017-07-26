@@ -240,9 +240,9 @@ gulp.task('build', function(callback) {
 gulp.task('deploy', function () {
     return gulp.src('dist/**/*.*')
         .pipe(sftp({
-            host: 'vh60.timeweb.ru',
-            user: 'cu11483',
-            pass: '7PjSghlVpps1',
-            remotePath: 'borodinski/public_html/'
+            host: 'hostName',
+            user: 'userName',
+            pass: 'password',
+            remotePath: 'projectFolder/public_html/'
         }));
 });
