@@ -27,10 +27,10 @@
                             <li class="mainMenu__item">
                                 <a class="mainMenu__link" href="#">Информация</a>
                             </li>
-                            <li class="mainMenu__item">
+                            <li class="mainMenu__item mainMenu__item_active">
                                 <a class="mainMenu__link" href="news.html">Новости</a>
                             </li>
-                            <li class="mainMenu__item mainMenu__item_active">
+                            <li class="mainMenu__item">
                                 <a class="mainMenu__link" href="price.html">Прайс-лист</a>
                             </li>
                             <li class="mainMenu__item">
@@ -73,60 +73,68 @@
                 </div>
             </div>
         </header>
-        <main class="price">
+        <main class="news">
             <div class="container">
-                <div class="priceContent">
+                <div class="newsContent">
                     <div class="breadCrumbs">
-                        <h5 class="breadCrumbs__title">Прайс-лист</h5>
+                        <h5 class="breadCrumbs__title">Новости</h5>
                         <ul class="breadCrumbs__list">
                             <li class="breadCrumbs__item">
                                 <a class="breadCrumbs__link" href="index.html">Главная</a>
                             </li>
-                            <li class="breadCrumbs__item breadCrumbs__item_active">Прайс-лист</li>
+                            <li class="breadCrumbs__item breadCrumbs__item_active">Новости</li>
                         </ul>
                     </div>
-                    <h4 class="priceContent__title">Истинно мужская классика</h4>
-                    <div class="priceContent__sectionContainer">
-                        <section class="priceContent__section">
-                            <h6 class="priceContent__sectionSubtitle">Мы используем только <br>лучшие средства:</h6>
-                            <ul class="priceContent__list">
-                                <li class="priceContent__item">Baxter of California</li>
-                                <li class="priceContent__item">Mr Natty</li>
-                                <li class="priceContent__item">Suavecito</li>
-                                <li class="priceContent__item">Malin+Goetz</li>
-                            </ul>
-                            <h6 class="priceContent__sectionSubtitle">Несколько слов о нас:</h6>
-                            <div class="priceContent__sectionText">
-                                <p>Наша парикмахерская занимается исключительно мужскими <br>
-                                стрижками. Стрижка каждого клиента для нас - это уникальная <br>
-                                и продуманная до мелочей работа. Мы не работаем на <br>
-                                количество, мы делаем качество.</p>
-                            </div>
-                        </section>
-                        <section class="priceContent__section">
-                            <h6 class="priceContent__sectionSubtitle">Цены на услуги <br>наших местеров:</h6>
-                            <table class="priceTable">
-                                <tr class="priceTable__row">
-                                    <td class="priceTable__cellCol1">Стрижка</td>
-                                    <td class="priceTable__cellCol2">1500 р.</td>
-                                </tr>
-                                <tr class="priceTable__row">
-                                    <td class="priceTable__cellCol1">Стрижка бороды</td>
-                                    <td class="priceTable__cellCol2">500 р.</td>
-                                </tr>
-                                <tr class="priceTable__row">
-                                    <td class="priceTable__cellCol1">Накрутка усов</td>
-                                    <td class="priceTable__cellCol2">350 р.</td>
-                                </tr>
-                            </table>
-                            <div class="priceContent__sectionText priceContent__sectionText_downline">
-                                <p>Наша мастерская расположена в центре города, поэтому <br>
-                                сделать стильную стрижку можно в любое время, даже в <br>
-                                обеденный перерыв. Здесь вы можете погрузиться в удобную <br>
-                                для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-                            </div>
-                        </section>
-                    </div>
+                    <form action="#" class="filter">
+                        <fieldset class="filter__itemGroup">
+                            <legend class="filter__groupName">Категории:</legend>
+                            <label class="filter__caption">
+                                <input class="filter__checkboxDefault" type="checkbox" name="staff" value="Staff" checked>
+                                <span class="filter__checkboxCustom"></span>
+                                <span class="filter__checkboxName">Перстонал</span>
+                            </label>
+                            <label class="filter__caption">
+                                <input class="filter__checkboxDefault" type="checkbox" name="goods" value="Goods" checked>
+                                <span class="filter__checkboxCustom"></span>
+                                <span class="filter__checkboxName">Поступления товаров</span>
+                            </label>
+                            <label class="filter__caption">
+                                <input class="filter__checkboxDefault" type="checkbox" name="care" value="Care" checked>
+                                <span class="filter__checkboxCustom"></span>
+                                <span class="filter__checkboxName">Уход за бородой и усами</span>
+                            </label>
+                            <label class="filter__caption">
+                                <input class="filter__checkboxDefault" type="checkbox" name="experience" value="Experience">
+                                <span class="filter__checkboxCustom"></span>
+                                <span class="filter__checkboxName">Опыт профессионалов</span>
+                            </label>
+                            <label class="filter__caption">
+                                <input class="filter__checkboxDefault" type="checkbox" name="other" value="Other">
+                                <span class="filter__checkboxCustom"></span>
+                                <span class="filter__checkboxName">Разное</span>
+                            </label>
+                        </fieldset>
+                        <button class="button">Показать</button>
+                    </form>
+                    <section class="newsList">
+                        <article class="newsList__article">
+                            <figure class="newsList__picture">
+                                <img class="newsList__image" src="img/content/news/jagermeister.jpg">
+                            </figure>
+                            <h4 class="newsList__title">Мы обновили ассортимент нашего мини-бара!</h4>
+                            <div class="newsList__textPreview">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</div>
+                            <time datetime="2017-07-05">5 июля 2017</time>
+                            <!-- <button class="button">Подробнее</button> -->
+                        </article>
+                        <article class="newsList__article">
+                            <figure class="newsList__picture">
+                                <img class="newsList__image" src="img/content/news/borisBritva.jpg">
+                            </figure>
+                            <h4 class="newsList__title">В нашей команде пополнение!</h4>
+                            <div class="newsList__textPreview">Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.</div>
+                            <time datetime="2017-06-29">29 июня 2017</time>
+                        </article>
+                    </section>
                 </div>
             </div>
         </main>

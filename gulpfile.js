@@ -74,7 +74,8 @@ gulp.task('images', function () {
         .pipe(cache(imageMin({
             optimizationLevel: 3, 
             progressive: true, 
-            interlaced: true
+            interlaced: true,
+            svgoPlugins: [{removeViewBox: true}]
         })))
         .pipe(gulp.dest('dist/img/'));
 });
@@ -86,6 +87,15 @@ gulp.task('images', function () {
 gulp.task('svg', function () {
     return gulp.src('src/img/**/*.svg')
         .pipe(gulp.dest('dist/img/'));
+});
+
+// --------------------------------------------------------------- //
+// Task: FAVICON. Перенос FAVICON в /dist
+// --------------------------------------------------------------- //
+
+gulp.task('favicon', function () {
+    return gulp.src('src/favicon.ico')
+        .pipe(gulp.dest('dist'));
 });
 
 // --------------------------------------------------------------- //
@@ -164,6 +174,7 @@ gulp.task('browser-sync', [
     'fonts',
     'images',
     'svg',
+    'favicon',
     'vendor:css',
     'vendor:js',
     'styles',
@@ -187,6 +198,7 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch(['src/img/**/*.*', '!**/*.svg'], ['images']);
     gulp.watch('src/img/**/*.svg', ['svg']);
+    gulp.watch('src/favicon.ico', ['favicon']);
 });
 
 // --------------------------------------------------------------- //
@@ -216,6 +228,7 @@ gulp.task('build', function(callback) {
         'fonts',
         'images',
         'svg',
+        'favicon',
         'vendor:css',
         'vendor:js',
         'styles',
@@ -227,22 +240,12 @@ gulp.task('build', function(callback) {
 // Task: Deploy.
 // --------------------------------------------------------------- //
 
-// gulp.task('deploy', function () {
-//     return gulp.src('dist/**/*.*')
-//         .pipe(sftp({
-//             host: 'hostName',
-//             user: 'userName',
-//             pass: 'password',
-//             remotePath: 'projectFolder/public_html/'
-//         }));
-// });
-
 gulp.task('deploy', function () {
     return gulp.src('dist/**/*.*')
         .pipe(sftp({
-            host: 'vh60.timeweb.ru',
-            user: 'cu11483',
-            pass: '7PjSghlVpps1',
-            remotePath: 'borodinski/public_html/'
+            host: 'hostName',
+            user: 'userName',
+            pass: 'password',
+            remotePath: 'projectFolder/public_html/'
         }));
 });

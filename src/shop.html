@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>Barbershop Borodinski</title>
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
@@ -26,7 +28,7 @@
                                 <a class="mainMenu__link" href="#">Информация</a>
                             </li>
                             <li class="mainMenu__item">
-                                <a class="mainMenu__link" href="#">Новости</a>
+                                <a class="mainMenu__link" href="news.html">Новости</a>
                             </li>
                             <li class="mainMenu__item">
                                 <a class="mainMenu__link" href="price.html">Прайс-лист</a>
@@ -49,7 +51,7 @@
                                 <a class="dropdownMenu__link" href="#">Информация</a>
                             </li>
                             <li class="dropdownMenu__item">
-                                <a class="dropdownMenu__link" href="#">Новости</a>
+                                <a class="dropdownMenu__link" href="news.html">Новости</a>
                             </li>
                             <li class="dropdownMenu__item">
                                 <a class="dropdownMenu__link" href="price.html">Прайс-лист</a>
@@ -150,89 +152,106 @@
                                 <span class="filter__checkboxName">American Crew</span>
                             </label>
                         </fieldset>
+                        <button class="button">Показать</button>
                     </form>
-                    <ul class="production">
-                        <li class="production__item">
-                            <a class="production__link" href="travelKit.html">
+                    <section class="shopContent__section">
+                        <ul class="production">
+                            <li class="production__item">
+                                <a class="production__link" href="travelKit.html">
+                                    <div class="production__picture">
+                                        <img class="production__image" src="img/content/shop/itemPic01.jpg" alt="Набор для путешествий «Baxter of California»">
+                                    </div>
+                                    <div class="production__character">
+                                        <span class="production__type">Набор для путешествий</span>
+                                        <span class="production__name">«Baxter of California»</span>
+                                        <div class="buySection">
+                                            <span class="buySection__price">2 900 Руб.</span>
+                                            <a href="#" class="button button_buySection">Купить</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="production__item">
                                 <div class="production__picture">
-                                    <img class="production__image" src="img/content/shop/itemPic01.jpg" alt="Набор для путешествий «Baxter of California»">
+                                    <img class="production__image" src="img/content/shop/itemPic02.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
                                 </div>
                                 <div class="production__character">
-                                    <span class="production__type">Набор для путешествий</span>
+                                    <span class="production__type">Увлажняющий кондиционер</span>
                                     <span class="production__name">«Baxter of California»</span>
                                     <div class="buySection">
-                                        <span class="buySection__price">2 900 Руб.</span>
+                                        <span class="buySection__price">750 Руб.</span>
                                         <a href="#" class="button button_buySection">Купить</a>
                                     </div>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="production__item">
-                            <div class="production__picture">
-                                <img class="production__image" src="img/content/shop/itemPic02.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
-                            </div>
-                            <div class="production__character">
-                                <span class="production__type">Увлажняющий кондиционер</span>
-                                <span class="production__name">«Baxter of California»</span>
-                                <div class="buySection">
-                                    <span class="buySection__price">750 Руб.</span>
-                                    <a href="#" class="button button_buySection">Купить</a>
+                            </li>
+                            <li class="production__item">
+                                <div class="production__picture">
+                                    <img class="production__image" src="img/content/shop/itemPic03.jpg" alt="Гель для волос «SUAVECITO»">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="production__item">
-                            <div class="production__picture">
-                                <img class="production__image" src="img/content/shop/itemPic03.jpg" alt="Гель для волос «SUAVECITO»">
-                            </div>
-                            <div class="production__character">
-                                <span class="production__type">Гель для волос</span>
-                                <span class="production__name">«SUAVECITO»</span>
-                                <div class="buySection">
-                                    <span class="buySection__price">290 Руб.</span>
-                                    <a href="#" class="button button_buySection">Купить</a>
+                                <div class="production__character">
+                                    <span class="production__type">Гель для волос</span>
+                                    <span class="production__name">«SUAVECITO»</span>
+                                    <div class="buySection">
+                                        <span class="buySection__price">290 Руб.</span>
+                                        <a href="#" class="button button_buySection">Купить</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="production__item">
-                            <div class="production__picture">
-                                <img class="production__image" src="img/content/shop/itemPic04.jpg" alt="Глина для укладки волос «American crew»">
-                            </div>
-                            <div class="production__character">
-                                <span class="production__type">Глина для укладки волос</span>
-                                <span class="production__name">«American crew»</span>
-                                <div class="buySection">
-                                    <span class="buySection__price">500 Руб.</span>
-                                    <a href="#" class="button button_buySection">Купить</a>
+                            </li>
+                            <li class="production__item">
+                                <div class="production__picture">
+                                    <img class="production__image" src="img/content/shop/itemPic04.jpg" alt="Глина для укладки волос «American crew»">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="production__item">
-                            <div class="production__picture">
-                                <img class="production__image" src="img/content/shop/itemPic05.jpg" alt="Гель для волос «AMERICAN CREW»">
-                            </div>
-                            <div class="production__character">
-                                <span class="production__type">Гель для волос</span>
-                                <span class="production__name">«AMERICAN CREW»</span>
-                                <div class="buySection">
-                                    <span class="buySection__price">300 Руб.</span>
-                                    <a href="#" class="button button_buySection">Купить</a>
+                                <div class="production__character">
+                                    <span class="production__type">Глина для укладки волос</span>
+                                    <span class="production__name">«American crew»</span>
+                                    <div class="buySection">
+                                        <span class="buySection__price">500 Руб.</span>
+                                        <a href="#" class="button button_buySection">Купить</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="production__item">
-                            <div class="production__picture">
-                                <img class="production__image" src="img/content/shop/itemPic06.jpg" alt="Набор для бритья «Baxter of California»">
-                            </div>
-                            <div class="production__character">
-                                <span class="production__type">Набор для бритья</span>
-                                <span class="production__name">«Baxter of California»</span>
-                                <div class="buySection">
-                                    <span class="buySection__price">3 900 Руб.</span>
-                                    <a href="#" class="button button_buySection">Купить</a>
+                            </li>
+                            <li class="production__item">
+                                <div class="production__picture">
+                                    <img class="production__image" src="img/content/shop/itemPic05.jpg" alt="Гель для волос «AMERICAN CREW»">
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="production__character">
+                                    <span class="production__type">Гель для волос</span>
+                                    <span class="production__name">«AMERICAN CREW»</span>
+                                    <div class="buySection">
+                                        <span class="buySection__price">300 Руб.</span>
+                                        <a href="#" class="button button_buySection">Купить</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="production__item">
+                                <div class="production__picture">
+                                    <img class="production__image" src="img/content/shop/itemPic06.jpg" alt="Набор для бритья «Baxter of California»">
+                                </div>
+                                <div class="production__character">
+                                    <span class="production__type">Набор для бритья</span>
+                                    <span class="production__name">«Baxter of California»</span>
+                                    <div class="buySection">
+                                        <span class="buySection__price">3 900 Руб.</span>
+                                        <a href="#" class="button button_buySection">Купить</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="productionButtons">
+                            <li class="productionButtons__item productionButtons__item_active">
+                                <button class="button button_productionButtons">1</button>
+                            </li>
+                            <li class="productionButtons__item">
+                                <button class="button button_productionButtons">2</button>
+                            </li>
+                            <li class="productionButtons__item">
+                                <button class="button button_productionButtons">3</button>
+                            </li>
+                            <li class="productionButtons__item">
+                                <button class="button button_productionButtons">4</button>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </main>
