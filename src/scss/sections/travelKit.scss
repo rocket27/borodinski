@@ -41,8 +41,7 @@
 }
 
 .composition__item {
-    background: url('../../img/decor/beard.png') no-repeat left center;
-    padding-left: 24px;
+    @extend %itemBackground;
     margin-bottom: 4px;
     &:last-child {
         margin: 0;

@@ -22,41 +22,54 @@
             right: 0;
         }
     }
-    &__sectionContainer {
-        @extend %flexRowNoWrap;
+    &__sectionBox {
+        @extend %flexRowAlignStart;
     }
     &__section {
         width: 470px;
+    }
+    &__section_wide {
+        width: 100%;
+        @extend %flexRowAlignStart;
+        
     }
     &__sectionSubtitle {
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 30px;
     }
+    &__sectionSubtitle_wide {
+        width: 100%;
+        margin-top: 60px;
+    }
     &__list {
-        margin-bottom: 60px;
+        
     }
     &__item {
-        padding-left: 20px;
+        @extend %itemBackground;
         margin-bottom: 20px;
-        position: relative;
-        &::before {
-            @extend %itemDecor;
-            left: 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__column {
+        width: 50%;
+        &:first-child {
+            padding-right: 40px;
         }
     }
 }
 
 .priceTable {
-    width: 470px;
+    width: 100%;
     border-collapse: collapse;
     border: 2px solid $colorType2;
-    margin-bottom: 154px;
+    // margin-bottom: 154px;
     &__row {
         height: 40px;
     }
     &__cellCol1, &__cellCol2 {
-        width: 235px;
+        width: 50%;
     }
     &__cellCol1 {
         padding-left: 18px;

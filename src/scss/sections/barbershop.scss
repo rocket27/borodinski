@@ -12,6 +12,9 @@
         @extend %flexRowNoWrap;
         padding: 55px 80px 60px;
         margin-bottom: 35px;
+        &:last-child {
+            margin: 0;
+        }
     }
 }
 
