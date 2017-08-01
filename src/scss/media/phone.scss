@@ -13,6 +13,12 @@
 
     .button {
         width: 44%;
+        &_buySection {
+            width: 78px;
+        }
+        &_productionButtons {
+            width: 43px;
+        }
     }
 
     .breadCrumbs__title {
@@ -52,4 +58,31 @@
         line-height: 44px;
     }
 
+    // Shop
+    .filter {
+        margin-bottom: 20px;
+        justify-content: center;
+        &__itemGroup {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__groupName {
+            margin-bottom: 6px;
+        }
+        &__caption {
+            margin: 0 16px 0 0;
+        }
+        &__checkboxCustom {
+            margin-right: 4px;
+        }
+    }
+
+    .production__item, .production__item:nth-child(3n + 3), .production__item:nth-child(2n) {
+        margin: 0 auto 20px;
+    }
+
+    .productionButtons {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -50,4 +50,22 @@
             display: none;
         }
     }
+
+    // Shop
+    .shopContent__section {
+        width: 488px;
+        padding-left: 18px;
+    }
+
+    .production__item {
+        margin: 0 30px 20px 0;
+        &:nth-child(3n + 3) {
+            margin-right: 30px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        
+    }
+    
 }
