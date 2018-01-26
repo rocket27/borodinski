@@ -92,6 +92,15 @@ time {
 	border-bottom: 4px solid $colorType3;
 }
 
+.input {
+	height: 43px;
+	border: 2px solid $colorType2;
+	padding-left: 15px;
+	&:focus {
+		border-color: $colorType4; 
+	}
+}
+
 .button {
 	display: inline-block;
 	width: 140px;
@@ -202,4 +211,12 @@ time {
         text-align: center;
         background-color: #e5e5e5;
     }
+}
+
+.popup {
+	display: none;
+}
+
+.fancybox-slide > * {
+    padding: 0;
 }

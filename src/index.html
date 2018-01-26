@@ -65,10 +65,29 @@
                         </ul>
                     </nav>
                     <div class="userBlock">
-                        <a class="userBlock__login" href="#">
+                        <a class="userBlock__login" href="#login">
                             <span class="userBlock__loginIcon fa fa-sign-in fa-lg" aria-hidden="true"></span>
                             <span class="userBlock__loginText">Вход</span>
                         </a>
+                    </div>
+                    <div class="popup" id="login">
+                        <div class="loginBlock">
+                            <div class="loginBlock__title">Вход в личный кабинет</div>
+                            <form class="loginBlock__form" id="loginForm" action="№" method="post">
+                                <input class="input input_loginBlock" type="text" name="login" placeholder="Введите логин">
+                                <input class="input input_loginBlock" type="password" name="password" placeholder="Введите пароль">
+                                <div class="loginBlock__formSection">
+                                    <label class="filter__caption">
+                                        <input class="filter__checkboxDefault" type="checkbox" name="rememberMe" value="Remember Me">
+                                        <span class="filter__checkboxCustom"></span>
+                                        <span class="filter__checkboxName">Запомнить меня</span>
+                                    </label>
+                                    <a href="#" class="loginBlock__forgotPassLink">Забыли пароль?</a>
+                                </div>
+                                <button class="button button_loginBlock" type="submit">Войти</button>
+                            </form>
+                            <a class="loginBlock__checkInLink" href="#">Регистрация</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,10 +174,10 @@
                                     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                                 </div>
                                 <form class="formEntry" id="formEntry" action="#" method="post">
-                                    <input class="formEntry__input" type="text" name="date" placeholder="Дата">
-                                    <input class="formEntry__input" type="text" name="time" placeholder="Время">
-                                    <input class="formEntry__input" type="text" name="name" placeholder="Ваше имя">
-                                    <input class="formEntry__input" type="text" name="phoneNumber" placeholder="Телефон">
+                                    <input class="input input_formEntry" type="text" name="date" placeholder="Дата">
+                                    <input class="input input_formEntry" type="text" name="time" placeholder="Время">
+                                    <input class="input input_formEntry" type="text" name="name" placeholder="Ваше имя">
+                                    <input class="input input_formEntry" type="text" name="phoneNumber" placeholder="Телефон">
                                 </form>
                             </div>
                             <div class="holder__buttons">

@@ -19,13 +19,6 @@ $(function() {
             dropdown.removeClass('dropdownMenu__list_active');
         } else {
             dropdown.addClass('dropdownMenu__list_active');
-            
-            // dropdown.css('opacity', 1);
-            // dropdown.css({
-            //     transition: 'opacity .5s',
-            //     opacity: 1
-            // });
         }
-        
     });
 });

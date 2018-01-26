@@ -111,16 +111,11 @@
     width: 300px;
     @extend %flexRowNoWrap;
     flex-wrap: wrap;
-    &__input {
-        width: 140px;
-        height: 43px;
-        border: 2px solid $colorType2;
-        padding-left: 15px;
-        margin-bottom: 20px;
-        &:focus {
-            border-color: $colorType4; 
-        }
-    }
+}
+
+.input_formEntry {
+    width: 140px;
+    margin-bottom: 20px;
 }
 
 @include placeholder {
